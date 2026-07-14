@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velscents | Premium Inspired Fragrances</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <div class="promo-banner">
+        Free Delivery Nationwide on Orders Above Rs. 5,000
+    </div>
+
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-form-container">
+            <input type="text" class="search-input" id="search-input" placeholder="Search fragrances...">
+            <button class="close-search" id="search-close">&times;</button>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#" id="brand-logo">Velscents</a>
+            </div>
+            <nav class="nav-menu">
+                <span class="nav-item active" data-target="all">Home</span>
+                <span class="nav-item" data-target="men">Men</span>
+                <span class="nav-item" data-target="women">Women</span>
+                <span class="nav-item" data-target="bestsellers">Best Sellers</span>
+            </nav>
+            <div class="header-actions">
+                <div class="action-btn" id="search-trigger">Search</div>
+                <div class="action-btn" id="account-trigger-btn">Account</div>
+                <div class="action-btn cart-icon-wrapper" id="cart-trigger">
+                    Cart
+                    <span class="cart-count" id="cart-counter">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="hero-banner">
+        <div class="hero-content">
+            <h1>Art of Luxury Scents</h1>
+            <p>Premium High-Concentration Expressions</p>
+            <button class="btn-luxury" id="explore-btn">Explore Collection</button>
+        </div>
+    </section>
+
+    <section class="account-section" id="account-view">
+        <h2>Join Exclusive Club</h2>
+        <p>Put your email address below to get exclusive news and deals sent over email.</p>
+        <form class="account-form" onsubmit="alert('Thank you! You have been subscribed successfully.'); this.reset(); return false;">
+            <input type="email" class="account-input" placeholder="Your Email Address" required>
+            <button type="submit" class="btn-account-submit">Submit</button>
+        </form>
+    </section>
+
+    <main class="section-container" id="products-view">
+        <div class="section-title">
+            <h2 id="catalog-title">Best Sellers</h2>
+            <p id="catalog-subtitle">Luxury inspirations optimized for long-lasting performance</p>
+        </div>
+
+        <div class="product-grid">
+                <div class="product-card" 
+                     data-title="SAVAGE" 
+                     data-cats='["men", "bestsellers"]'>
+                    <div class="image-wrapper">
+                        <span class="badge-sale">Sale</span>
+                        <img src="Savage.png" alt="Savage" class="product-image" onerror="this.onerror=null; this.src='Savage.png';">
+                    </div>
+                    <span class="inspired-tag">Here what you need Best</span>
+                    <h3 class="product-title">Savage</h3>
+                    <div class="price-container">
+                        <span class="sale-price">Rs. 1,799</span>
+                        <span class="regular-price">Rs. 2,499</span>
+                    </div>
+                    <button class="btn-add-cart">Add To Cart</button>
+                </div>
+                <div class="product-card" 
+                     data-title="ROYAL OUD" 
+                     data-cats='["men", "women", "bestsellers"]'>
+                    <div class="image-wrapper">
+                        <span class="badge-sale">Sale</span>
+                        <img src="Royal Oud.png" alt="Royal Oud" class="product-image" onerror="this.onerror=null; this.src='Savage.png';">
+                    </div>
+                    <span class="inspired-tag">A royal fragrance by ZeeStyle</span>
+                    <h3 class="product-title">Royal Oud</h3>
+                    <div class="price-container">
+                        <span class="sale-price">Rs. 1,899</span>
+                        <span class="regular-price">Rs. 2,600</span>
+                    </div>
+                    <button class="btn-add-cart">Add To Cart</button>
+                </div>
+                <div class="product-card" 
+                     data-title="NOOR" 
+                     data-cats='["women"]'>
+                    <div class="image-wrapper">
+                        <span class="badge-sale">Sale</span>
+                        <img src="Noor.png" alt="Noor" class="product-image" onerror="this.onerror=null; this.src='Savage.png';">
+                    </div>
+                    <span class="inspired-tag">Inspired by Al-Zahra</span>
+                    <h3 class="product-title">Noor</h3>
+                    <div class="price-container">
+                        <span class="sale-price">Rs. 1,799</span>
+                        <span class="regular-price">Rs. 2,499</span>
+                    </div>
+                    <button class="btn-add-cart">Add To Cart</button>
+                </div>
+                <div class="product-card" 
+                     data-title="ZARAR" 
+                     data-cats='["men", "bestsellers"]'>
+                    <div class="image-wrapper">
+                        <span class="badge-sale">Sale</span>
+                        <img src="Zarar.png" alt="ZARAR" class="product-image" onerror="this.onerror=null; this.src='Savage.png';">
+                    </div>
+                    <span class="inspired-tag">Get some better touch</span>
+                    <h3 class="product-title">ZARAR</h3>
+                    <div class="price-container">
+                        <span class="sale-price">Rs. 1,799</span>
+                        <span class="regular-price">Rs. 2,499</span>
+                    </div>
+                    <button class="btn-add-cart">Add To Cart</button>
+                </div>
+                <div class="product-card" 
+                     data-title="JANNAT" 
+                     data-cats='["women", "bestsellers"]'>
+                    <div class="image-wrapper">
+                        <span class="badge-sale">Sale</span>
+                        <img src="Jannat.png" alt="Jannat" class="product-image" onerror="this.onerror=null; this.src='Savage.png';">
+                    </div>
+                    <span class="inspired-tag">Jannat for her</span>
+                    <h3 class="product-title">Jannat</h3>
+                    <div class="price-container">
+                        <span class="sale-price">Rs. 1,799</span>
+                        <span class="regular-price">Rs. 2,499</span>
+                    </div>
+                    <button class="btn-add-cart">Add To Cart</button>
+                </div>
+                <div class="product-card" 
+                     data-title="AMBER MUSK" 
+                     data-cats='["men", "women", "bestsellers"]'>
+                    <div class="image-wrapper">
+                        <span class="badge-sale">Sale</span>
+                        <img src="Amber Musk.png" alt="Amber Musk" class="product-image" onerror="this.onerror=null; this.src='Savage.png';">
+                    </div>
+                    <span class="inspired-tag">Inspired by Musk-e-Amber</span>
+                    <h3 class="product-title">Amber Musk</h3>
+                    <div class="price-container">
+                        <span class="sale-price">Rs. 1,799</span>
+                        <span class="regular-price">Rs. 2,499</span>
+                    </div>
+                    <button class="btn-add-cart">Add To Cart</button>
+                </div>
+                <div class="product-card" 
+                     data-title="BLACK OUD" 
+                     data-cats='["men"]'>
+                    <div class="image-wrapper">
+                        <span class="badge-sale">Sale</span>
+                        <img src="Black Oud.png" alt="Black Oud" class="product-image" onerror="this.onerror=null; this.src='Savage.png';">
+                    </div>
+                    <span class="inspired-tag">Inspired by Royal Oud</span>
+                    <h3 class="product-title">Black Oud</h3>
+                    <div class="price-container">
+                        <span class="sale-price">Rs. 1,799</span>
+                        <span class="regular-price">Rs. 2,499</span>
+                    </div>
+                    <button class="btn-add-cart">Add To Cart</button>
+                </div>
+                <div class="product-card" 
+                     data-title="ROSE ELIXIR" 
+                     data-cats='["women"]'>
+                    <div class="image-wrapper">
+                        <span class="badge-sale">Sale</span>
+                        <img src="Rose.png" alt="ROSE ELIXIR" class="product-image" onerror="this.onerror=null; this.src='Savage.png';">
+                    </div>
+                    <span class="inspired-tag">Luxury Scent</span>
+                    <h3 class="product-title">ROSE ELIXIR</h3>
+                    <div class="price-container">
+                        <span class="sale-price">Rs. 1,899</span>
+                        <span class="regular-price">Rs. 2,499</span>
+                    </div>
+                    <button class="btn-add-cart">Add To Cart</button>
+                </div>
+        </div>
+    </main>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="btn-close-cart" id="cart-close">&times;</button>
+        </div>
+        <div class="cart-items-body" id="cart-items-container">
+            <p class="empty-cart-text">Your shopping cart is currently empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total-wrapper">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal-val">Rs. 0</span>
+            </div>
+            <button class="btn-checkout" onclick="window.location.href='checkout.php';">
+                Proceed To Checkout
+            </button>
+        </div>
+    </div>
+
+    <footer class="premium-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Velscents</h3>
+                <p>Crafting high-end, deeply persistent fragrance expressions inspired by globally legendary houses. We deliver luxury directly to your doorstep across Pakistan.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Support</h4>
+                <div class="footer-links">
+                    <a href="#">Contact Us</a>
+                    <a href="#">Exchange Policy</a>
+                    <a href="#">Refund Policy</a>
+                    <a href="#">Track Order</a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Get In Touch</h4>
+                <div class="contact-info">
+                    <p><strong>Customer Support</strong>Mon – Fri: 10 AM – 10 PM <br> Sat/Sun: Closed</p>
+                    <p><strong>Contact Info</strong>WhatsApp: 0312 6955737<br>Email: info@Velscents.com</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                &copy; 2026 Velscents Pakistan. All Rights Reserved.
+            </div>
+            <div class="footer-socials">
+                <a href="#">Instagram</a>
+                <a href="#">Snapchat</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/923126955737" class="whatsapp-float" target="_blank">WA</a>
+
+<script>
+        // ---------- Element references ----------
+        const heroBanner      = document.getElementById('hero-banner');
+        const productsView    = document.getElementById('products-view');
+        const accountView     = document.getElementById('account-view');
+        const navItems        = document.querySelectorAll('.nav-item');
+        const productCards    = document.querySelectorAll('.product-card');
+
+        const searchTrigger   = document.getElementById('search-trigger');
+        const searchOverlay   = document.getElementById('search-overlay');
+        const searchClose     = document.getElementById('search-close');
+        const searchInput     = document.getElementById('search-input');
+
+        const accountTrigger  = document.getElementById('account-trigger-btn');
+
+        const cartTrigger     = document.getElementById('cart-trigger');
+        const cartDrawer      = document.getElementById('cart-drawer');
+        const cartOverlay     = document.getElementById('cart-overlay');
+        const cartClose       = document.getElementById('cart-close');
+        const cartCounter     = document.getElementById('cart-counter');
+        const cartItemsBody   = document.getElementById('cart-items-container');
+        const cartSubtotalVal = document.getElementById('cart-subtotal-val');
+
+        const exploreBtn      = document.getElementById('explore-btn');
+
+        let cart = [];
+
+        // ---------- View switching (Home / Men / Women / Best Sellers / Account) ----------
+        function showProductsView() {
+            heroBanner.style.display = '';
+            productsView.style.display = '';
+            accountView.style.display = 'none';
+        }
+
+        function filterProducts(target) {
+            productCards.forEach(card => {
+                if (target === 'all') {
+                    card.classList.remove('hidden');
+                    return;
+                }
+                let cats = [];
+                try { cats = JSON.parse(card.dataset.cats || '[]'); } catch (e) { cats = []; }
+                if (cats.includes(target)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        function activateCategory(target) {
+            navItems.forEach(n => n.classList.remove('active'));
+            const matchingNav = Array.from(navItems).find(n => n.dataset.target === target);
+            if (matchingNav) matchingNav.classList.add('active');
+
+            showProductsView();
+            filterProducts(target);
+            heroBanner.style.display = (target === 'all') ? '' : 'none';
+        }
+
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const target = item.dataset.target;
+                // Save the chosen category in the URL so a refresh keeps you here
+                // instead of always resetting back to Home.
+                window.location.hash = (target === 'all') ? '' : target;
+                activateCategory(target);
+            });
+        });
+
+        accountTrigger.addEventListener('click', () => {
+            heroBanner.style.display = 'none';
+            productsView.style.display = 'none';
+            accountView.style.display = 'block';
+        });
+
+        exploreBtn.addEventListener('click', () => {
+            productsView.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // ---------- Search overlay ----------
+        searchTrigger.addEventListener('click', () => {
+            searchOverlay.classList.add('active');
+            searchInput.focus();
+        });
+
+        searchClose.addEventListener('click', () => {
+            searchOverlay.classList.remove('active');
+        });
+
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.trim().toUpperCase();
+            productCards.forEach(card => {
+                const title = card.dataset.title || '';
+                card.classList.toggle('hidden', query.length > 0 && !title.includes(query));
+            });
+        });
+
+        searchInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                searchOverlay.classList.remove('active');
+                showProductsView();
+            }
+        });
+
+        // ---------- Cart drawer open/close ----------
+        function openCart() {
+            cartDrawer.classList.add('active');
+            cartOverlay.classList.add('active');
+        }
+
+        function closeCart() {
+            cartDrawer.classList.remove('active');
+            cartOverlay.classList.remove('active');
+        }
+
+        cartTrigger.addEventListener('click', openCart);
+        cartClose.addEventListener('click', closeCart);
+        cartOverlay.addEventListener('click', closeCart);
+
+        // ---------- Cart data + rendering ----------
+        function priceToNumber(priceStr) {
+            return parseInt(String(priceStr).replace(/[^0-9]/g, ''), 10) || 0;
+        }
+
+        function renderCart() {
+            cartCounter.textContent = cart.length;
+
+            if (cart.length === 0) {
+                cartItemsBody.innerHTML = '<p class="empty-cart-text">Your shopping cart is currently empty.</p>';
+                cartSubtotalVal.textContent = 'Rs. 0';
+                return;
+            }
+
+            let subtotal = 0;
+            cartItemsBody.innerHTML = cart.map((item, index) => {
+                subtotal += priceToNumber(item.price);
+                return `
+                    <div class="cart-item">
+                        <img src="${item.imgSrc}" alt="${item.title}" class="cart-item-img">
+                        <div class="cart-item-info">
+                            <div class="cart-item-title">${item.title}</div>
+                            <div class="cart-item-price">${item.price}</div>
+                        </div>
+                        <span data-remove-index="${index}" style="cursor:pointer; color: var(--text-muted); font-size: 0.85rem;">&times;</span>
+                    </div>
+                `;
+            }).join('');
+
+            cartSubtotalVal.textContent = 'Rs. ' + subtotal.toLocaleString('en-PK');
+
+            cartItemsBody.querySelectorAll('[data-remove-index]').forEach(el => {
+                el.addEventListener('click', () => {
+                    removeFromCart(parseInt(el.dataset.removeIndex, 10));
+                });
+            });
+        }
+
+        async function callCartApi(payload) {
+            const res = await fetch('manage_cart.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            return res.json();
+        }
+
+        async function loadCart() {
+            const data = await callCartApi({ action: 'get' });
+            if (data.success) {
+                cart = data.cart || [];
+                renderCart();
+            }
+        }
+
+        async function addToCart(title, price, imgSrc) {
+            const data = await callCartApi({ action: 'add', title, price, imgSrc });
+            if (data.success) {
+                cart = data.cart || [];
+                renderCart();
+                openCart();
+            }
+        }
+
+        async function removeFromCart(index) {
+            const data = await callCartApi({ action: 'remove', index });
+            if (data.success) {
+                cart = data.cart || [];
+                renderCart();
+            }
+        }
+
+        document.querySelectorAll('.btn-add-cart').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const card = btn.closest('.product-card');
+                const title = card.querySelector('.product-title').textContent.trim();
+                const price = card.querySelector('.sale-price').textContent.trim();
+                const imgSrc = card.querySelector('.product-image').src;
+                addToCart(title, price, imgSrc);
+            });
+        });
+
+        // ---------- Init ----------
+        function restoreFromHash() {
+            const target = window.location.hash ? window.location.hash.substring(1) : 'all';
+            const validTargets = Array.from(navItems).map(n => n.dataset.target);
+            activateCategory(validTargets.includes(target) ? target : 'all');
+        }
+
+        window.addEventListener('hashchange', restoreFromHash);
+        restoreFromHash();
+        loadCart();
+    </script>
+</body>
+</html>
